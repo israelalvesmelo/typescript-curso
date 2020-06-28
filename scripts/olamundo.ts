@@ -57,3 +57,18 @@ console.log(`Function addAny: ${this.addAny("2","4")}`);
 
 let exemple : void  = null;
 
+let var1: any = "anything";
+
+let stringLength : number = (<string> var1).length; //cast
+let stringUpperCase : string = (var1 as string).toUpperCase(); //cast
+
+console.log(`Cast on typeScript: ${stringLength} and ${stringUpperCase}`);
+
+function add2(v1: string, ...v2:number[]): void {
+    let sum: number = 0;
+    for (let i = 0; i< v2.length; i++){
+        sum+=v2[i];
+    }
+    console.log(v1 + sum);
+}
+add2("Sum is: ",1,2,3,4,5,76,8,9,9,56,3);
