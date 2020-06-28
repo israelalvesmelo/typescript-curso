@@ -50,4 +50,5 @@ emp1.print();
 let p4 = <Person2>{};
 let p5: Person2 = new Employee2("p5", 2000); //Polimorfismo
 p5.name;
+p5.name = "Change name";
 p5.print();
