@@ -4,7 +4,7 @@
 import EmailValidator = Validation.EmailValidator;
 import BooleanValidation = Validation.BooleanValidator;
 
-let emailExamples = ["lala","lalala@", "teste@hotmail.com.br"];
+let emailExamples= ["lala","lalala@", "teste@hotmail.com.br"];
 
 emailExamples.forEach(email =>
 {
