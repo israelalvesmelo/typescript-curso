@@ -13,3 +13,13 @@ for(let i=0; i< sessionStorage.length; i++){
 
 //sessionStorage.removeItem(key); //To remove one attributes from session
 //sessionStorage.clear(); //To remove all attributes from session
+console.log("-------------------------")
+let key3 = "localStorageKey";
+localStorage.setItem(key3, "Trying local storage");
+
+for(let i=0; i< localStorage.length; i++){
+    console.log(localStorage.getItem(localStorage.key(i)));
+}
+
+//localStorage.removeItem(key); //To remove one attributes from session
+//localStorage.clear(); //To remove all attributes from session
