@@ -21,5 +21,14 @@ class ApplicationError implements Error{
 class StringNotValidError extends ApplicationError{
 
 }
-
-let input = doSomethingWithString("");
+try {
+    let input = doSomethingWithString("");
+}catch (e) {
+    if(e instanceof StringNotValidError){
+        console.log(`Error about String`);
+        throw e;
+    }
+    console.log(`No action`);
+}finally {
+    console.log(`always executed`);
+}
